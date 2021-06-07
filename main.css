@@ -43,14 +43,14 @@ section {
 .btn {
     cursor: pointer;
     border: 0;
-    padding: 6px 12px;
+    padding: 9px 15px;
     border-radius: 3px;
     line-height: 1.4;
 }
 
 .btn-default {
     color: white;
-    background-color: #faa541;
+    background-color: rgb(170, 13, 86);
 }
 
 .btn-primary {
@@ -73,12 +73,12 @@ section {
 
 .text-secondary {
     font-size: 30px;
-    color: #faa541;
+    color:rgb(170, 13, 86);
 }
 
 .text-primary {
     font-size: 16px;
-    color: #364147;
+    color:black;
 }
 
 .header-nav {
@@ -92,9 +92,16 @@ section {
     margin-right: 60px;
 }
 
+.brand a { 
+    color: black; 
+    font-style: italic; 
+
+}
+
 .logo {
     max-width: 100%;
     height: auto;
+    
 }
 
 .search-box {
@@ -152,20 +159,19 @@ section {
 }
 
 .hero {
-    background-image: url('../Projekt-Jubiler/images/slub.jpg');
+    background-image: url('../Projekt-Jubiler/images/hero1.jpg');
     height: 400px;
     background-size: cover;
-    background-position: center center;
+    background-position: bottom center;
     text-transform: uppercase;
 }
 
 .hero h1 {
     position: relative;
-    left: -30px;
 }
 
 .hero h2 {
-    color: #faa541;
+    color: rgb(170, 13, 86);
 }
 
 .hero h1, .hero h2 {
