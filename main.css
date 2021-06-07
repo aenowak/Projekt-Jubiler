@@ -32,6 +32,10 @@ section {
     align-items: center;
 }
 
+.flex-end {
+    align-items: flex-end;
+}
+
 .center {
     justify-content: center;
 }
@@ -39,6 +43,7 @@ section {
 .space-between {
     justify-content: space-between;
 }
+
 
 .btn {
     cursor: pointer;
@@ -60,6 +65,7 @@ section {
 
 .form-control {
     display: block;
+    margin: 18px;
     padding: 6px 12px;
     border: 1px solid #a0a0a0;
     color: #8598a2;
@@ -81,12 +87,9 @@ section {
     color:black;
 }
 
-.header-nav {
-    border-bottom: 1px solid #a0a0a0;
-}
 
 .brand {
-    width: 170px;
+    width: 100px;
     height: 85px;
     margin-left: -15px;
     margin-right: 60px;
@@ -162,7 +165,7 @@ section {
     background-image: url('../Projekt-Jubiler/images/hero1.jpg');
     height: 400px;
     background-size: cover;
-    background-position: bottom center;
+    background-position: center;
     text-transform: uppercase;
 }
 
@@ -286,18 +289,14 @@ section {
     content: "";
     width: 100px;
     height: 1px;
-    background-color: #faa541;
+    background-color:whitesmoke;
     margin: 20px auto;
     display: block;
 }
 
-.full-banner-sidebar > div:nth-of-type(1) {
-    font-size: 60px;
-    font-weight: 700;
-    line-height: 1;
-}
 
-.full-banner-sidebar > div:nth-of-type(2) {
+
+.full-banner-sidebar > div {
     font-size: 25px;
     font-weight: 200;
     letter-spacing: 3px;
@@ -366,75 +365,33 @@ footer a:hover {
     background-position: center;
 }
 
-.twitter {
-    background-image: url('../img/twitter.svg');
-}
 
 .facebook {
-    background-image: url('../img/facebook.svg');
+    background-image: url('/images/facebook.svg');
 }
 
 .instagram {
-    background-image: url('../img/instagram.svg');
+    background-image: url('/images/instagram.svg');
 }
 
 .pinterest {
-    background-image: url('../img/pinterest.svg');
+    background-image: url('/images/pinterest.svg');
 }
 
-.newsletter .link-header {
-    font-size: 12px;
-    font-weight: 400;
-    margin-bottom: 5px;
-}
 
-.newsletter .link-subheader {
-    font-style: italic;
-    font-size: 12px;
-    font-weight: 400;
-    margin-bottom: 15px;
-}
-
-.newsletter input {
-    border: 1px solid #364147;
-    width: 200px;
-    margin-bottom: 10px;
-}
-
-.newsletter button {
-    width: 150px;
-    min-width: auto;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
 
 .ps {
     flex: 0 0 25%;
-    padding: 40px 0;
+    padding: 40px 20px;
     color: #e5e5e5;
     font-size: 16px;
 }
 
-.ps img {
-    max-width: 230px;
-}
 
-.demo {
-    padding: 0 30px;
-}
 
-.demo:before {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 1px;
-    margin: 30px 0;
-    background: linear-gradient(to right,#f05a28 0,#e80a89 100%);
-}
-
-.copyright {
+.find-us {
     flex: 0 0 75%;
-    padding: 10px 0;
+    padding: 10px 10px;
     font-size: 12px;
     text-align: center;
 }

@@ -4,7 +4,6 @@
 <head>
   <meta charset="UTF-8">
   <title>Jubiler Online</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
   <link
     href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
     rel="stylesheet">
@@ -14,7 +13,7 @@
 <body>
 
   <!-- NAVIGATION -->
-  <nav class="header-nav">
+  <nav>
     <div class="container flex space-between">
       <!-- LOGO -->
       <div class="flex align-center brand">
@@ -23,7 +22,7 @@
           Jubiler dla Ciebie</a>
       </div>
       <!-- SEARCH -->
-      <div class="flex flex-one align-center">
+      <div class="flex flex-one flex-end">
         <div>
           <form>
             <input aria-label="Search" placeholder="Czego szukasz?" type="search">
@@ -37,10 +36,10 @@
             <li><a href="#">Akcesoria</a></li>
           </ul>
         </div>
-        <!-- PROFILE -->
+        <!-- BASKET -->
         <div class="flex align-center profile">
           <div class="flex flex-column account">
-            <a href="#">Koszyk</a>
+           
             <a href="#">Zaloguj</a>
           </div>
           <div><img alt="Koszyk" src="images/shopping-bag.png"></div>
@@ -51,8 +50,7 @@
 
   <!-- HERO -->
   <section class="hero">
-    <div class="container flex flex-column align-center center">
-
+    <div class="container flex flex-column flex-end center">
       <h1>Nowa kolekcja</h1>
       <h2>Białe złoto i diamenty</h2>
       <p>ponadczasowe wzory</p>
@@ -65,14 +63,14 @@
     <!-- SALE BANNER -->
     <section>
       <div class="flex align-center center banner">
-        <img alt="Brown Boots" src="images/natura.jpg">
+        <img alt="Listki" src="images/natura.jpg">
         <div class="banner-text">
           <div>Letni weekend</div>
           <div>Nawet 50% taniej</div>
           <div>przy zakupie dwóch różnych akcesoriów</div>
 
         </div>
-        <img alt="Grey Boots" src="images/natura2.jpg">
+        <img alt="Listki" src="images/natura2.jpg">
       </div>
     </section>
 
@@ -120,7 +118,7 @@
     <section class="full-banner">
       <div class="full-banner-image"></div>
       <div class="flex flex-column align-center center full-banner-sidebar">
-        <h4>Promocja</h4>
+        <h4>Tylko u nas</h4>
         <div>20% taniej</div>
         <div>Najpiękniejsze pierścionki zaręczynowe</div>
         <a class="btn btn-default" href="#">Zobacz</a>
@@ -167,14 +165,19 @@
           <li><a href="#" class="instagram"></a></li>
           <li><a href="#" class="pinterest"></a></li>
         </ul>
-        <div class="newsletter">
-          <div class="link-header"> Newsletter </div>
-          <div class="link-subheader">Specjalne oferty, promocje i wiele więcej. </div>
-          <input class="form-control" type="text" placeholder="Enter email address" />
-          <button class="btn btn-primary">Zapisz się</button>
-        </div>
+        
       </div>
     </section>
+
+        <!-- FIND -->
+        <section class="ps">
+          <div class="flex flex-column align-center">
+            <div class="link-header"> Newsletter </div>
+            <div class="link-subheader">Specjalne oferty, promocje i wiele więcej. </div>
+            <input class="form-control" type="text" placeholder="Enter email address" />
+            <button class="btn btn-primary">Zapisz się</button>
+          </div>
+        </section>
 
   </footer>
 </body>
