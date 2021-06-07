@@ -1,18 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
+
 <head>
   <meta charset="UTF-8">
   <title>Jubiler Online</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
   <link href="../Projekt-Jubiler/main.css" rel="stylesheet">
 </head>
+
 <body>
 
   <!-- NAVIGATION -->
-  <nav>
+  <nav class="header-nav">
     <div class="container flex space-between">
-      <!-- BRANDING -->
-      <div class="flex align-center">
+      <!-- LOGO -->
+      <div class="flex align-center brand">
         <a href="#">
           <img alt="Jubiler Online" src="/images/wedding-rings.png">
         </a>
@@ -24,7 +27,7 @@
             <input aria-label="Search" placeholder="Czego szukasz?" type="search">
             <button type="submit">Szukaj</button>
           </form>
-          <ul class="flex space-between">
+          <ul class="flex space-between nav-list">
             <li><a href="#">Biżuteria</a></li>
             <li><a href="#">Zaręczyny</a></li>
             <li><a href="#">Obrączki</a></li>
@@ -32,9 +35,9 @@
             <li><a href="#">Akcesoria</a></li>
           </ul>
         </div>
-        <!-- BASKET -->
-        <div class="flex align-center">
-          <div class="flex flex-column">
+        <!-- PROFILE -->
+        <div class="flex align-center profile">
+          <div class="flex flex-column account">
             <a href="#">Koszyk</a>
             <a href="#">Zaloguj</a>
           </div>
@@ -44,8 +47,8 @@
     </div>
   </nav>
 
-    <!-- HERO -->
-  <section>
+  <!-- HERO -->
+  <section class="hero">
     <div class="container flex flex-column align-center center">
       <h1>Promocja</h1>
       <h2>20% taniej</h2>
@@ -58,14 +61,14 @@
 
     <!-- SALE BANNER -->
     <section>
-      <div class="flex align-center center">
-        <img alt="Okulary" src="img/brown-boots.jpg">
-        <div>
+      <div class="flex align-center center banner">
+        <img alt="Brown Boots" src="img/brown-boots.jpg">
+        <div class="banner-text">
           <div>Letni weekend</div>
           <div>Nawet 50% taniej</div>
           <div>przy zakupie dwóch różnych akcesoriów</div>
         </div>
-        <img alt="Akcesoria" src="img/grey-boots.jpg">
+        <img alt="Grey Boots" src="img/grey-boots.jpg">
       </div>
     </section>
 
@@ -110,13 +113,13 @@
     </section>
 
     <!-- FULL BANNER -->
-    <section>
-      <div></div>
-      <div>
+    <section class="full-banner">
+      <div class="full-banner-image"></div>
+      <div class="flex flex-column align-center center full-banner-sidebar">
         <h4>Nowa kolekcja</h4>
         <div>Złoto i diamenty</div>
         <div>ponadczasowe wzory</div>
-        <a href="#">Zobacz</a>
+        <a class="btn btn-default" href="#">Zobacz</a>
       </div>
     </section>
 
@@ -124,53 +127,52 @@
 
   <!-- FOOTER -->
   <footer>
-    <section>
+    <section class="container lists space-between">
       <div>
-        <div>Obsługa klienta</div>
+        <div class="text-primary link-header">Obsługa klienta</div>
         <ul>
           <li><a href="#">Kontakt</a></li>
           <li><a href="#">Status zamówienia</a></li>
           <li><a href="#">Regulamin zwrotów</a></li>
           <li><a href="#">Czas i koszt dostawy</a></li>
-          <li><a href="#">Store Locator</a></li>
+          <li><a href="#">Znajdź sklep</a></li>
           <li><a href="#">Regulamin promocji</a></li>
         </ul>
       </div>
       <div>
-        <div>O firmie</div>
+        <div class="text-primary link-header">O firmie</div>
         <ul>
           <li><a href="#">O nas</a></li>
           <li><a href="#">Praca</a></li>
           <li><a href="#">Klienci</a></li>
-          <li><a href="#">Aplikacja mobilna</a></li>
-
+          <li><a href="#">Nawiąż współpracę</a></li>
         </ul>
       </div>
       <div>
-        <div>Produkty</div>
+        <div class="text-primary link-header">Produkty</div>
         <ul>
           <li><a href="#">Karnety</a></li>
           <li><a href="#">Jak dobrać biżuterię?</a></li>
           <li><a href="#">Jak dobrać rozmiar pierścionka?</a></li>
         </ul>
       </div>
-      <div>
-        <div>Follow Us</div>
+      <div class="social">
+        <div class="text-primary link-header">Znajdziesz nas tutaj:</div>
         <ul>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
+          <li><a href="#" class="facebook"></a></li>
+          <li><a href="#" class="instagram"></a></li>
+          <li><a href="#" class="pinterest"></a></li>
         </ul>
-        <div>
-          <div>Newsletter</div>
-          <div>Specjalne oferty, promocje i wiele więcej.</div>
-          <input type="text" placeholder="Twój adres email" />
-          <button>Zapisz się</button>
+        <div class="newsletter">
+          <div class="link-header"> Newsletter </div>
+          <div class="link-subheader">Specjalne oferty, promocje i wiele więcej. </div>
+          <input class="form-control" type="text" placeholder="Enter email address" />
+          <button class="btn btn-primary">Zapisz się</button>
         </div>
       </div>
     </section>
 
   </footer>
 </body>
+
 </html>
