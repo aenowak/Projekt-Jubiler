@@ -101,12 +101,6 @@ section {
 
 }
 
-.logo {
-    max-width: 100%;
-    height: auto;
-    
-}
-
 .search-box {
     width: 330px;
     height: 30px;
@@ -156,17 +150,15 @@ section {
     height: 60px;
 }
 
-.profile-pic img {
-    border-radius: 100px;
-    max-width: 100%;
-}
 
 .hero {
-    background-image: url('../Projekt-Jubiler/images/hero1.jpg');
+    background-image: url('./images/hero1.jpg');
     height: 400px;
     background-size: cover;
     background-position: center;
     text-transform: uppercase;
+    cursor: pointer;
+    
 }
 
 .hero h1 {
@@ -183,12 +175,6 @@ section {
     line-height: 0.9;
 }
 
-.hero p {
-    letter-spacing: 2px;
-    font-weight: 700;
-    font-size: 21px;
-    margin: 0 0 10px;
-}
 
 .banner {
     margin: 55px 15px;
@@ -196,6 +182,14 @@ section {
     border-top: 1px solid #a0a0a0;
     border-bottom: 1px solid #a0a0a0;
     padding: 25px 0;
+    cursor: pointer;
+}
+
+.banner-hero {
+    margin: 55px 15px;
+    width: 100%;
+    padding: 25px 0;
+    cursor: pointer;
 }
 
 .banner img {
@@ -205,7 +199,6 @@ section {
 .banner-text {
     font-size: 30px;
     font-weight: 700;
-    text-transform: uppercase;
     line-height: 1;
     text-align: center;
 }
@@ -218,7 +211,7 @@ section {
 
 .category {
     flex: 0 0 25%;
-    padding: 0 15px;
+    padding: 15px;
 }
 
 .category img {
@@ -226,27 +219,26 @@ section {
 }
 
 .category-text {
-    color: #364147;
-    padding: 30px 0;
+    color: black;
+    padding: 0;
     text-transform: uppercase;
-    text-align: center;
+    
+}
+.category-price {
+    color: black;
+    padding: 0;
+    
 }
 
-.category-text > div {
-    font-size: 16px;
-    font-weight: 200;
-    color: #faa541;
-}
-
-.category-text h3 {
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 1;
+.inline {
+    display: flex;
+    justify-content: space-between;
+    
 }
 
 .full-banner {
     padding: 0 15px;
-    margin: 50px 0px;
+    margin: 100px 0px;
     position: relative;
 }
 
@@ -263,7 +255,7 @@ section {
 
 .full-banner-image {
     flex: 0 0 58.333333%;
-    background-image: url('../Projekt-Jubiler/images/slub.jpg');
+    background-image: url('./images/slub.jpg');
     background-size: cover;
     background-position: top center;
     min-height: 400px;
@@ -272,7 +264,7 @@ section {
 .full-banner-sidebar {
     flex: 0 0 41.666667%;
     background-color: #364147;
-    text-transform: uppercase;
+
     padding: 30px;
     color: white;
 }
@@ -285,14 +277,6 @@ section {
     line-height: 1;
 }
 
-.full-banner-sidebar h4:after {
-    content: "";
-    width: 100px;
-    height: 1px;
-    background-color:whitesmoke;
-    margin: 20px auto;
-    display: block;
-}
 
 
 
@@ -316,6 +300,7 @@ footer {
     z-index: 0;
     min-height: 330px;
     background-color: black;
+    margin-top: 100px;
 }
 
 footer:after {
@@ -367,18 +352,19 @@ footer a:hover {
 
 
 .facebook {
-    background-image: url('/images/facebook.svg');
+    background-image: url('./images/facebook.svg');
+    margin: 10px;
 }
 
 .instagram {
-    background-image: url('/images/instagram.svg');
+    background-image: url('./images/instagram.svg');
+    margin: 10px;
 }
 
 .pinterest {
-    background-image: url('/images/pinterest.svg');
+    background-image: url('./images/pinterest.svg');
+    margin: 10px;
 }
-
-
 
 .ps {
     flex: 0 0 25%;
@@ -386,8 +372,6 @@ footer a:hover {
     color: #e5e5e5;
     font-size: 16px;
 }
-
-
 
 .find-us {
     flex: 0 0 75%;
